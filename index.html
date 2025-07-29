@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PillShare - Save Medicines, Save Lives</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fb;
+      color: #333;
+    }
+
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #cce7ff;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 25px;
+      background: #003366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .stats {
+      background: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      border-top: 3px solid #003366;
+      border-bottom: 3px solid #003366;
+    }
+
+    .footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PillShare</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#how">How It Works</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Providing Medicines to Underprivileged People</h2>
+    <p>Helping reduce medicine wastage and save lives.</p>
+    <div class="buttons">
+      <a href="#donate">DONATE MEDICINE</a>
+      <a href="#about">OUR MISSION</a>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div id="counter">10,582 People Saved</div>
+  </section>
+
+  <section id="about" style="padding: 40px; text-align: center;">
+    <h3>About PillShare</h3>
+    <p>We collect unused, safe medicines and redistribute them to the poor and needy through verified partners and community networks.</p>
+  </section>
+
+  <section id="how" style="padding: 40px; background: #e6f2ff; text-align: center;">
+    <h3>How It Works</h3>
+    <ol style="max-width: 600px; margin: auto; text-align: left;">
+      <li>Donors fill an online form to share surplus medicines.</li>
+      <li>Volunteers collect the medicines and verify expiry and condition.</li>
+      <li>We distribute them to NGOs, clinics, and individuals in need.</li>
+    </ol>
+  </section>
+
+  <section id="contact" style="padding: 40px; text-align: center;">
+    <h3>Contact Us</h3>
+    <p>Email: contact@pillshare.org | Phone: +91-9876543210</p>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 PillShare. All rights reserved.
+  </div>
+
+  <script>
+    // You can replace this with a live counter backend in production
+    let peopleSaved = 10582;
+    document.getElementById("counter").innerText = `${peopleSaved.toLocaleString()} People Saved`;
+  </script>
+</body>
+
+</html>
